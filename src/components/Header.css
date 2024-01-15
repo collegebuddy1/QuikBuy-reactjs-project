@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Average+Sans|Changa|Faster+One&display=swap');
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding:20px 40px;
+	font-family: 'Average Sans', sans-serif;
+	background: #ffffff;
+}
+.logo{
+	font-family: 'Faster One', cursive;
+	font-size:30px;
+	vertical-align: middle;
+}
+a{
+	color:#000000;
+	text-decoration: none;
+
+}
+ul{
+	margin:0;
+	display: flex;
+}
+li{
+	list-style: none;
+	margin:0 15px;
+}
+.menu{
+	display:none!important;
+}
+@media only screen and  (max-width:768px){
+	.menu{
+		display:flex!important;
+		
+	}
+	.fa-bars{
+		align-self: center;
+		font-size:30px;
+	}
+	ul{
+		display:none;
+		width:100px;
+		padding:0 5px;
+	}
+	.show-menu li{
+		margin:3px;
+	}
+	.show-menu{
+		display:flex;
+		flex-direction: column;
+		background-color: #ffffff;
+		position:absolute;
+		right:0;
+		z-index: 2;
+		top:72px;
+	}
+	.dont-show-menu{
+		display:none;
+	}
+}
